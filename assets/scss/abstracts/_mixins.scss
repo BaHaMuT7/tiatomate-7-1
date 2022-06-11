@@ -1,0 +1,37 @@
+@mixin configurarMedidas ($alto: 100vh, $ancho: 100vw) {
+  height: $alto;
+  width: $ancho;
+}
+
+@mixin configurarLimiteMedidas ($alto-maximo: 100%, $ancho-maximo: 100%) {
+  max-height: $alto-maximo;
+  max-width: $ancho-maximo;
+}
+
+@mixin esconderContenedor () {
+  display: none;
+}
+
+@mixin establecerGrillaPrincipal ($plantilla-areas, $plantilla-columnas, $plantilla-filas, $espacio: 0 0) {
+  display: grid;
+  grid-template-areas: $plantilla-areas;
+  grid-template-columns: $plantilla-columnas;
+  grid-template-rows: $plantilla-filas;
+  grid-gap: $espacio;
+}
+
+@mixin marcarAreaGrilla ($nombre) {
+  grid-area: $nombre;
+}
+
+@mixin establecerFlex ($direccion: row, $envoltorio: wrap, $gap: normal normal) {
+  display: flex;
+  flex-direction: $direccion;
+  flex-wrap: $envoltorio;
+  gap: $gap;
+}
+
+@mixin alinearComponentes($justificado:center, $alineacion:center) {
+  justify-content: $justificado;
+  align-items: $alineacion;
+}

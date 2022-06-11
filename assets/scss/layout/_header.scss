@@ -1,0 +1,47 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.container-xxl {
+
+  .header {
+
+    @include marcarAreaGrilla(cabecera);
+    @include configurarMedidas(970px, 100%);
+
+    &__hero--bg-color {
+      background-color: $bg-snow;
+    }
+
+    &__hero {
+      @include configurarMedidas(100%, 100%);
+
+      .logo {
+        @include configurarMedidas(100px, 370px);
+
+        img {
+          @include configurarMedidas(80px, 370px);
+          margin-left: 130px;
+          margin-top: 10px;
+        }
+
+      }
+
+      .slogan {
+        background-color: $bg-jellybean;
+
+        @include configurarMedidas(870px, 100%);
+        @include establecerFlex(column);
+        @include alinearComponentes();
+
+        h1 {
+          color: $color-white;
+          font: $raleway-light-xlarge;
+        }
+        p {
+            color: $color-white;
+            font: $raleway-bold-xlarge;
+        }
+      }
+    }
+  }
+}

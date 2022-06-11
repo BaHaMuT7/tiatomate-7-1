@@ -382,4 +382,66 @@ template {
   margin-block-end: 0;
 }
 
+.container-xxl {
+  display: grid;
+  grid-template-areas: "cabecera" "principal" "pie";
+  grid-template-columns: 1fr;
+  grid-template-rows: 970px auto 360px;
+  grid-gap: 0 0;
+}
+
+.container-xxl .header {
+  grid-area: cabecera;
+  height: 970px;
+  width: 100%;
+}
+.container-xxl .header__hero--bg-color {
+  background-color: #FAFAFA;
+}
+.container-xxl .header__hero {
+  height: 100%;
+  width: 100%;
+}
+.container-xxl .header__hero .logo {
+  height: 100px;
+  width: 370px;
+}
+.container-xxl .header__hero .logo img {
+  height: 80px;
+  width: 370px;
+  margin-left: 130px;
+  margin-top: 10px;
+}
+.container-xxl .header__hero .slogan {
+  background-color: #E56353;
+  height: 870px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: normal normal;
+  justify-content: center;
+  align-items: center;
+}
+.container-xxl .header__hero .slogan h1 {
+  color: #FFF;
+  font: 200 70px "Raleway", sans-serif;
+}
+.container-xxl .header__hero .slogan p {
+  color: #FFF;
+  font: 700 70px "Raleway", sans-serif;
+}
+
+main {
+  grid-area: principal;
+}
+main img {
+  height: 200px;
+  width: 200px;
+}
+
+footer {
+  grid-area: pie;
+}
+
 /*# sourceMappingURL=style.css.map */
