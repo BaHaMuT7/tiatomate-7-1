@@ -568,8 +568,21 @@ template {
   color: #FAFAFA;
 }
 
-footer {
+.container-xxl .footer {
   grid-area: pie;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: normal normal;
+  justify-content: center;
+  align-items: center;
+}
+.container-xxl .footer--bg-color {
+  background-color: #686963;
+}
+.container-xxl .footer__logo {
+  height: 130px;
+  width: 260px;
 }
 
 button {
