@@ -38,6 +38,10 @@
     max-width: 1320px;
   }
 }
+.container-xxl .main__products {
+  border: none;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -413,7 +417,6 @@ template {
   margin-top: 10px;
 }
 .container-xxl .header__hero .slogan {
-  background-color: #E56353;
   height: 870px;
   width: 100%;
   display: flex;
@@ -423,13 +426,12 @@ template {
   justify-content: center;
   align-items: center;
 }
-.container-xxl .header__hero .slogan h1 {
-  color: #FFF;
-  font: 200 70px "Raleway", sans-serif;
+.container-xxl .header__hero .slogan--bg-color {
+  background-color: #E56353;
 }
-.container-xxl .header__hero .slogan p {
-  color: #FFF;
-  font: 700 70px "Raleway", sans-serif;
+
+.container-xxl .main__products {
+  border: none;
 }
 
 .container-xxl .main {
@@ -440,8 +442,6 @@ template {
 .container-xxl .main__products {
   height: 2100px;
   width: 100%;
-  background-color: #686963;
-  border: none;
 }
 .container-xxl .main__products .main__description {
   height: 1050px;
@@ -452,24 +452,14 @@ template {
   gap: normal normal;
   justify-content: center;
   align-items: center;
+}
+.container-xxl .main__products .main__description--bg-color {
   background-color: #686963;
 }
 .container-xxl .main__products .main__description img {
   height: 450px;
   width: 1000px;
   padding-bottom: 20px;
-}
-.container-xxl .main__products .main__description h2 {
-  font: 700 50px "Raleway", sans-serif;
-  color: #FFF;
-  padding-bottom: 20px;
-}
-.container-xxl .main__products .main__description p {
-  font: 200 18px "Raleway", sans-serif;
-  color: #FFF;
-  height: auto;
-  width: 60%;
-  padding-bottom: 10px;
 }
 .container-xxl .main__products .main__origin {
   height: 1050px;
@@ -480,6 +470,8 @@ template {
   gap: normal normal;
   justify-content: center;
   align-items: center;
+}
+.container-xxl .main__products .main__origin--bg-color {
   background-color: #FFF;
 }
 .container-xxl .main__products .main__origin img {
@@ -487,21 +479,11 @@ template {
   width: 1000px;
   margin-bottom: 20px;
 }
-.container-xxl .main__products .main__origin h2 {
-  font: 700 50px "Raleway", sans-serif;
-  color: #686963;
-  margin-bottom: 20px;
-}
-.container-xxl .main__products .main__origin p {
-  font: 200 18px "Raleway", sans-serif;
-  color: #686963;
-  height: auto;
-  width: 60%;
-  margin-bottom: 10px;
-}
 .container-xxl .main__team {
   height: 2000px;
   width: 100%;
+}
+.container-xxl .main__team--bg-color {
   background-color: #FAFAFA;
 }
 .container-xxl .main__team .main__about-us-text {
@@ -513,9 +495,9 @@ template {
   gap: normal normal;
   justify-content: center;
   align-items: center;
+}
+.container-xxl .main__team .main__about-us-text--bg-color {
   background-color: #E56353;
-  font: 700 70px "Raleway", sans-serif;
-  color: #FAFAFA;
 }
 .container-xxl .main__team .main__members {
   height: 1635px;
@@ -540,22 +522,9 @@ template {
   width: 452px;
   padding-bottom: 20px;
 }
-.container-xxl .main__team .main__members .member h2 {
-  font: 700 50px "Raleway", sans-serif;
-  color: #686963;
-  padding-bottom: 20px;
-}
-.container-xxl .main__team .main__members .member p {
-  font: 200 18px "Raleway", sans-serif;
-  color: #686963;
-  height: auto;
-  width: 60%;
-  padding-bottom: 10px;
-}
 .container-xxl .main__contact {
   height: 500px;
   width: 100%;
-  background-color: #E56353;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -563,9 +532,8 @@ template {
   justify-content: center;
   align-items: center;
 }
-.container-xxl .main__contact h2 {
-  font: 700 50px "Raleway", sans-serif;
-  color: #FAFAFA;
+.container-xxl .main__contact--bg-color {
+  background-color: #E56353;
 }
 
 .container-xxl .footer {
@@ -585,7 +553,40 @@ template {
   width: 260px;
 }
 
-button {
+.slogan h1 {
+  color: #FFF;
+  font: 200 70px "Raleway", sans-serif;
+}
+
+.main__description h2 {
+  font: 700 50px "Raleway", sans-serif;
+  color: #FFF;
+  padding-bottom: 20px;
+}
+
+.main__origin h2 {
+  font: 700 50px "Raleway", sans-serif;
+  color: #686963;
+  margin-bottom: 20px;
+}
+
+.main__about-us-text h2 {
+  font: 700 70px "Raleway", sans-serif;
+  color: #FAFAFA;
+}
+
+.member h2 {
+  font: 700 50px "Raleway", sans-serif;
+  color: #686963;
+  padding-bottom: 20px;
+}
+
+.main__contact h2 {
+  font: 700 50px "Raleway", sans-serif;
+  color: #FAFAFA;
+}
+
+.main__contact button {
   border: 3px solid #686963;
   border-radius: 60px;
   background-color: #FAFAFA;
@@ -593,6 +594,35 @@ button {
   height: 80px;
   width: 500px;
   font: 700 50px "Raleway", sans-serif;
+}
+
+.slogan p {
+  color: #FFF;
+  font: 700 70px "Raleway", sans-serif;
+}
+
+.main__description p {
+  font: 200 18px "Raleway", sans-serif;
+  color: #FFF;
+  height: auto;
+  width: 60%;
+  padding-bottom: 10px;
+}
+
+.main__origin p {
+  font: 200 18px "Raleway", sans-serif;
+  color: #686963;
+  height: auto;
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.member p {
+  font: 200 18px "Raleway", sans-serif;
+  color: #686963;
+  height: auto;
+  width: 60%;
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

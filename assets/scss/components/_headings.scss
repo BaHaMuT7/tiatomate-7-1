@@ -1,0 +1,61 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+
+//Header
+
+.slogan {
+
+  h1 {
+    color: $color-white;
+    font: $raleway-light-xlarge;
+  }
+}
+
+//Main
+
+
+.main__description {
+
+  h2 {
+    font: $raleway-bold-large;
+    color: $color-white;
+    padding-bottom: 20px;
+  }
+
+}
+
+.main__origin {
+
+  h2 {
+    font: $raleway-bold-large;
+    color: $color-granitegray;
+    margin-bottom: 20px;
+  }
+
+}
+
+.main__about-us-text {
+  h2 {
+    font: $raleway-bold-xlarge;
+    color: #FAFAFA;
+  }
+}
+
+.member {
+
+  h2 {
+    font: $raleway-bold-large;
+    color: $color-granitegray;
+    padding-bottom: 20px;
+  }
+
+}
+
+.main__contact {
+  h2 {
+    font: $raleway-bold-large;
+    color: $color-snow;
+  }
+}
+

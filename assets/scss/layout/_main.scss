@@ -1,5 +1,6 @@
 @import "../abstracts/variables";
 @import "../abstracts/mixins";
+@import "../abstracts/placeholders";
 
 .container-xxl {
   .main {
@@ -8,62 +9,39 @@
 
     &__products {
       @include configurarMedidas(2100px, 100%); //count in
-      background-color: $bg-granitegray;
-      border: none;
+      @extend %desaparecerBorde;
 
       .main__description {
+
+        &--bg-color {
+          background-color: $bg-granitegray;
+        }
 
         @include configurarMedidas(1050px, 100%);
         @include establecerFlex(column);
         @include alinearComponentes();
 
-        background-color: $bg-granitegray;
-
         img {
           height: 450px;
           width: 1000px;
           padding-bottom: 20px;
-        }
-
-        h2 {
-          font: $raleway-bold-large;
-          color: $color-white;
-          padding-bottom: 20px;
-        }
-
-        p {
-          font: $raleway-light-medium;
-          color: $color-white;
-          @include configurarMedidas(auto, 60%);
-          padding-bottom: 10px;
         }
       }
 
       .main__origin {
 
+        &--bg-color {
+          background-color: $bg-white;
+        }
+
         @include configurarMedidas(1050px, 100%);
         @include establecerFlex(column);
         @include alinearComponentes();
-
-        background-color: $bg-white;
 
         img {
           height: 450px;
           width: 1000px;
           margin-bottom: 20px;
-        }
-
-        h2 {
-          font: $raleway-bold-large;
-          color: $color-granitegray;
-          margin-bottom: 20px;
-        }
-
-        p {
-          font: $raleway-light-medium;
-          color: $color-granitegray;
-          @include configurarMedidas(auto, 60%);
-          margin-bottom: 10px;
         }
       }
     }
@@ -71,7 +49,10 @@
     &__team {
 
       @include configurarMedidas(2000px, 100%); //count in
-      background-color: $bg-snow;
+
+      &--bg-color {
+        background-color: $bg-snow;
+      }
 
       .main__about-us-text {
 
@@ -80,9 +61,10 @@
         @include establecerFlex();
         @include alinearComponentes();
 
-        background-color: $bg-jellybean;
-        font: $raleway-bold-xlarge;
-        color: #FAFAFA;
+        &--bg-color {
+          background-color: $bg-jellybean;
+        }
+
       }
 
       .main__members {
@@ -102,19 +84,6 @@
             width: 452px;
             padding-bottom: 20px;
           }
-
-          h2 {
-            font: $raleway-bold-large;
-            color: $color-granitegray;
-            padding-bottom: 20px;
-          }
-
-          p {
-            font: $raleway-light-medium;
-            color: $color-granitegray;
-            @include configurarMedidas(auto, 60%);
-            padding-bottom: 10px;
-          }
         }
       }
 
@@ -122,16 +91,13 @@
 
     &__contact {
       @include configurarMedidas(500px, 100%); //count in
-      background-color: $bg-jellybean;
+
+      &--bg-color {
+        background-color: $bg-jellybean;
+      }
 
       @include establecerFlex(column, nowrap, 50px);
       @include alinearComponentes();
-
-      h2 {
-          font: $raleway-bold-large;
-          color: $color-snow;
-      }
     }
-
   }
 }

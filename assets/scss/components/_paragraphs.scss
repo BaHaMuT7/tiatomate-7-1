@@ -1,0 +1,48 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+//header
+.slogan {
+
+  p {
+    color: $color-white;
+    font: $raleway-bold-xlarge;
+  }
+
+}
+
+
+//Main
+
+
+.main__description {
+
+  p {
+    font: $raleway-light-medium;
+    color: $color-white;
+    @include configurarMedidas(auto, 60%);
+    padding-bottom: 10px;
+  }
+
+}
+
+.main__origin {
+
+  p {
+    font: $raleway-light-medium;
+    color: $color-granitegray;
+    @include configurarMedidas(auto, 60%);
+    margin-bottom: 10px;
+  }
+
+}
+
+.member {
+
+  p {
+    font: $raleway-light-medium;
+    color: $color-granitegray;
+    @include configurarMedidas(auto, 60%);
+    padding-bottom: 10px;
+  }
+}

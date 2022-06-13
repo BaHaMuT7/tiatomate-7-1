@@ -13,9 +13,9 @@
       background-color: $bg-granitegray;
     }
 
-     &__logo {
+    &__logo {
       @include configurarMedidas(130px,260px);
     }
-    
+
   }
 }
